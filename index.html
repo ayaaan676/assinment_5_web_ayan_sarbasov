@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 5 - JavaScript Basics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>My Personal Profile</h1>
+    <section class="card">
+      <h2>Profile Information</h2>
+      <p id="profileName">Name: Ayan</p>
+      <p id="profileAge">Age: 19</p>
+      <p id="developerStatus">Developer: Yes</p>
+      <p id="hobbyCount">Hobbies: 3</p>
+    </section>
+    <section class="card">
+      <h2>Create / Update Profile</h2>
+      <form id="profileForm">
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="Enter your name" required>
+        <label for="birthYear">Birth Year</label>
+        <input id="birthYear" type="number" min="1900" max="2026" placeholder="e.g. 2007" required>
+        <button type="submit">Create / Update Profile</button>
+      </form>
+      <p id="message"></p>
+    </section>
+    <section class="card">
+      <h2>My Hobbies</h2>
+      <ul id="hobbyList"></ul>
+      <div class="add-row">
+        <input id="newHobby" type="text" placeholder="Enter a hobby">
+        <button id="addButton" type="button">Add Item</button>
+      </div>
+      <button id="removeButton" class="remove" type="button">Remove Item</button>
+    </section>
+  </main>
+</body>
+</html>
